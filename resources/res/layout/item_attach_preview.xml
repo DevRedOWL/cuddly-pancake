@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="100dp" android:layout_height="70dp">
+    <ImageView android:id="@+id/ivPreview" android:background="@color/backgroundTertiary" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/smallPadding"/>
+    <ProgressBar android:id="@+id/pbAttach" android:layout_width="24dp" android:layout_height="24dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivCheck" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true" app:srcCompat="@drawable/icon_check"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivDeleteAttach" android:padding="4dp" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/icon_close_circle"/>
+</RelativeLayout>

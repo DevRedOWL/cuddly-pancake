@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="org.linphone.StatusFragment" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/topbar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/status">
+        <ImageView android:id="@+id/back" android:background="@drawable/toolbar_button" android:padding="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/back" android:layout_weight="0.2" android:contentDescription="@string/content_description_back"/>
+        <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/inapp" android:layout_weight="0.6" style="@style/font1"/>
+        <ImageView android:id="@+id/cancel" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/dialer_back" android:layout_weight="0.2" android:contentDescription="@string/content_description_dialer_back"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/purchaseItemsFetchInProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topbar"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginBottom="@dimen/smallPadding">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:id="@+id/tvOfferListTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/list_of_offer" android:fontFamily="@font/bold" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Text.Big.Market"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvOfferList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/smallPadding" app:layout_constraintTop_toBottomOf="@+id/tvOfferListTitle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

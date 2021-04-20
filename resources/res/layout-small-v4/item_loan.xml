@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlLoan" android:layout_width="match_parent" android:layout_height="216dp" android:layout_margin="@dimen/padding">
+        <ImageView android:id="@+id/ivBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/ivBackground" android:layout_marginStart="120dp">
+            <TextView android:textSize="18sp" android:textColor="#fff" android:id="@+id/tvLoanTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:fontFamily="@font/bold"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llLoanFeatures" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnGetLoan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:text="@string/loanRequest" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding"/>
+</LinearLayout>

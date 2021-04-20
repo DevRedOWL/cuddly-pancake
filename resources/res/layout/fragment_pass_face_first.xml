@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_pass_face_first_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/id1" layout="@layout/item_pass_id_title_with_image"/>
+    <include android:id="@+id/choose1" layout="@layout/item_id_pass_title_subtitle"/>
+    <LinearLayout android:gravity="bottom" android:id="@+id/my_pass_item" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/addFinger" android:layout_margin="@dimen/base_16" android:text="@string/button_add_photo" app:type="4" style="@style/ButtonMainStyle.Stroke"/>
+    </LinearLayout>
+</LinearLayout>

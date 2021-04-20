@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/inapp_purchase" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/inapp_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="5dp" android:src="@drawable/linphone_logo" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_toRightOf="@+id/inapp_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:id="@+id/purchase_title" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/font7"/>
+        <TextView android:id="@+id/purchase_description" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/font11"/>
+    </LinearLayout>
+    <TextView android:id="@+id/purchase_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

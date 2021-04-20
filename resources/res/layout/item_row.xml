@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="13dp" android:paddingBottom="11dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+    <TextView android:textSize="11sp" android:gravity="center" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/regular" app:layout_constraintEnd_toStartOf="@+id/device" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</LinearLayout>

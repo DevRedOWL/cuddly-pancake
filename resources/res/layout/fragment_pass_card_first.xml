@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pass_card_first_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/pb" android:visibility="invisible" android:layout_width="180dp" android:layout_height="180dp" android:progressDrawable="@drawable/gradient_progress" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/id1" layout="@layout/item_pass_id_title_with_image"/>
+            <include android:id="@+id/choose1" layout="@layout/item_id_pass_title_subtitle"/>
+            <include android:id="@+id/choose2" layout="@layout/item_id_pass_title_subtitle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include android:id="@+id/choose3" layout="@layout/item_id_pass_title_subtitle"/>
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/addCard" android:layout_margin="@dimen/base_16" android:text="@string/button_add_card" app:type="4" style="@style/ButtonMainStyle.Stroke"/>
+            <include android:id="@+id/choose4" layout="@layout/item_id_pass_title_subtitle"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

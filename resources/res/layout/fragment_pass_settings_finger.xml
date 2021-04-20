@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pass_settings_finger_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/id1" layout="@layout/item_pass_id_title_with_image"/>
+        <LinearLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/base_16">
+            <include android:id="@+id/choose1" layout="@layout/item_label_underline_with_arrow_2"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/parent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/deleteFinger" android:visibility="invisible" android:layout_margin="@dimen/base_16" android:text="@string/button_delete_finger" app:type="4" style="@style/ButtonMainStyle.Stroke"/>
+    </LinearLayout>
+</ScrollView>

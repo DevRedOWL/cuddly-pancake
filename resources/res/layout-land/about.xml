@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_bar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2"/>
+        <TextView android:gravity="center" android:id="@+id/menu_name" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/about" android:maxLines="1" android:layout_weight="0.4" style="@style/font1"/>
+        <ImageView android:id="@+id/cancel" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/dialer_back" android:layout_weight="0.2" android:contentDescription="@string/content_description_dialer_back"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@color/colorC" android:layout_width="match_parent" android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="60dp" android:src="@drawable/splashscreen"/>
+            <TextView android:layout_gravity="center" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/font15"/>
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_description" style="@style/font3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_gravity="left" android:id="@+id/about_android_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version" style="@style/font12"/>
+            <TextView android:layout_gravity="left" android:id="@+id/about_liblinphone_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_liblinphone_version" style="@style/font12"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/colorH" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColorLink="@color/colorA" android:gravity="center" android:autoLink="web" android:layout_gravity="center" android:id="@+id/about_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_link" style="@style/font2"/>
+        <TextView android:textSize="18sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/about_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about_text" style="@style/font23"/>
+        <View android:background="@color/colorE" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="android:attr/buttonBarStyle">
+            <Button android:id="@+id/send_log" android:background="@drawable/button_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/menu_send_log" style="android:attr/buttonBarButtonStyleStyle"/>
+            <Button android:id="@+id/reset_log" android:background="@drawable/button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/menu_reset_log" style="android:attr/buttonBarButtonStyleStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

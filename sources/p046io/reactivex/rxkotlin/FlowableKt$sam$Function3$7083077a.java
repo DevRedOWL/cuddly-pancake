@@ -1,0 +1,19 @@
+package p046io.reactivex.rxkotlin;
+
+import kotlin.Metadata;
+import p046io.reactivex.functions.Function3;
+
+@Metadata(mo51341bv = {1, 0, 2}, mo51344k = 3, mo51345mv = {1, 1, 8})
+/* renamed from: io.reactivex.rxkotlin.FlowableKt$sam$Function3$7083077a */
+/* compiled from: flowable.kt */
+final class FlowableKt$sam$Function3$7083077a implements Function3 {
+    private final /* synthetic */ kotlin.jvm.functions.Function3 function;
+
+    FlowableKt$sam$Function3$7083077a(kotlin.jvm.functions.Function3 function3) {
+        this.function = function3;
+    }
+
+    public final /* synthetic */ R apply(T1 t1, T2 t2, T3 t3) {
+        return this.function.invoke(t1, t2, t3);
+    }
+}

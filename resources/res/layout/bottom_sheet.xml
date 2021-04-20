@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@color/brandBackgroundFive" android:paddingTop="@dimen/base_16" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="35dp" app:layout_behavior="@string/bottom_sheet_behavior">
+    <ImageView android:id="@+id/iv_hotkeys" android:background="@drawable/ic_bottom_sheet" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/bottom_frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+</LinearLayout>

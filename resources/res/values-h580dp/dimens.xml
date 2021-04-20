@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="registerEditHeight">46dp</dimen>
+    <dimen name="tabsHeight">36dp</dimen>
+    <dimen name="tabsTextSize">15sp</dimen>
+</resources>

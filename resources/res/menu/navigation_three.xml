@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/icon_smartflat" android:textSize="8dp" android:id="@+id/navigation_smartflat" android:title="@string/title_smartflat"/>
+    <item android:icon="@drawable/icon_security" android:textSize="8dp" android:id="@+id/navigation_security" android:title="@string/title_security"/>
+    <item android:icon="@drawable/icon_service" android:textSize="8dp" android:id="@+id/navigation_service" android:title="@string/title_service"/>
+    <item android:icon="@drawable/icon_market" android:textSize="8dp" android:id="@+id/navigation_market" android:title="@string/title_market"/>
+    <item android:icon="@drawable/icon_chat" android:textSize="8dp" android:id="@+id/navigation_chats_id" android:title="@string/title_chats3"/>
+</menu>

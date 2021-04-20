@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/AppTheme" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/nestedScroll" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="@color/brandTextSecondary" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/development_living_complex" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding"/>
+            <TextView android:textSize="16sp" android:textColor="@color/brandTextPrimary" android:gravity="center_vertical" android:id="@+id/tvComplex" android:background="@drawable/background_container_white_rounded_stroke" android:paddingTop="@dimen/smallPadding" android:paddingBottom="@dimen/smallPadding" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="@dimen/padding" android:drawablePadding="@dimen/padding" android:drawableEnd="@drawable/arrow_down_textcolor" android:fontFamily="@font/regular" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:weightSum="5" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+                    <TextView android:textSize="14sp" android:textColor="@color/brandTextSecondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/development_readyness" android:fontFamily="@font/light"/>
+                    <TextView android:textSize="20sp" android:textColor="@color/textPrimary" android:gravity="center_vertical" android:id="@+id/textPercent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallPadding" android:fontFamily="@font/medium"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2">
+                    <TextView android:textSize="14sp" android:textColor="@color/brandTextSecondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/development_end_of_build" android:fontFamily="@font/light"/>
+                    <TextView android:textSize="20sp" android:textColor="@color/textPrimary" android:gravity="center_vertical" android:id="@+id/textPercentMessage" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/smallPadding" android:fontFamily="@font/medium"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/rvStageList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:layout_marginBottom="@dimen/padding" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/smallPadding" android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="#55333333" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_width="72dp" android:layout_height="72dp" android:indeterminate="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

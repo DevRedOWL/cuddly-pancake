@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow android:gravity="center" android:layout_weight="1">
+        <org.linphone.p054ui.Digit android:id="@+id/Digit1" android:background="@drawable/numpad_one" android:text="1" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit2" android:background="@drawable/numpad_two" android:text="2" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit3" android:background="@drawable/numpad_three" android:text="3" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+    </TableRow>
+    <TableRow android:gravity="center" android:layout_weight="1">
+        <org.linphone.p054ui.Digit android:id="@+id/Digit4" android:background="@drawable/numpad_four" android:text="4" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit5" android:background="@drawable/numpad_five" android:text="5" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit6" android:background="@drawable/numpad_six" android:text="6" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+    </TableRow>
+    <TableRow android:gravity="center" android:layout_weight="1">
+        <org.linphone.p054ui.Digit android:id="@+id/Digit7" android:background="@drawable/numpad_seven" android:text="7" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit8" android:background="@drawable/numpad_eight" android:text="8" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit9" android:background="@drawable/numpad_nine" android:text="9" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+    </TableRow>
+    <TableRow android:gravity="center" android:layout_weight="1">
+        <org.linphone.p054ui.Digit android:id="@+id/DigitStar" android:background="@drawable/numpad_star_digit" android:text="*" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/Digit00" android:background="@drawable/numpad_zero" android:text="0+" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+        <org.linphone.p054ui.Digit android:id="@+id/DigitHash" android:background="@drawable/numpad_sharp" android:text="#" android:soundEffectsEnabled="true" style="@style/DialerDigit"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="org.linphone.StatusFragment" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <include android:id="@+id/topbar" layout="@layout/assistant_topbar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/imageCardView" android:layout_width="match_parent" android:layout_height="125dp" app:cardBackgroundColor="@color/cardBackgroundPrimary" app:cardCornerRadius="5dp" app:cardElevation="5dp">
+    <ImageView android:id="@+id/offerImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+</androidx.cardview.widget.CardView>

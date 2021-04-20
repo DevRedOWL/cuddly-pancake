@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/mySlotsParent" android:background="@color/brandBackgroundTertiary" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textColor="@color/brandTextPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/mySlotsTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/parkingMySlots" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btnNewRent" android:layout_below="@+id/mySlotsParent"/>
+    <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnNewRent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/parkingNewRent" android:layout_alignParentBottom="true" app:type="radial"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMessage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/largePadding" android:layout_centerInParent="true">
+        <TextView android:textSize="20sp" android:textColor="@color/brandTextPrimary" android:gravity="center" android:id="@+id/tvMessageTitle" android:padding="@dimen/largePadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/largePadding" android:text="@string/parkingNoRents" android:fontFamily="@font/bold"/>
+        <TextView android:textSize="18sp" android:textColor="@color/brandTextPrimary" android:gravity="center" android:id="@+id/tvMessageDescription" android:padding="@dimen/largePadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/parkingNoRentsDescription" android:fontFamily="@font/regular"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

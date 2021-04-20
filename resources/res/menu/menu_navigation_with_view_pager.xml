@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_nav_home" android:enabled="true" android:id="@+id/nav_home" android:title="@string/nav_first" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_nav_security" android:enabled="true" android:id="@+id/nav_security" android:title="@string/nav_second" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_nav_uslugi" android:enabled="true" android:id="@+id/nav_uslugi" android:title="@string/nav_third" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_nav_partner" android:enabled="true" android:id="@+id/nav_partner" android:title="@string/nav_fourth" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_nav_chat" android:enabled="true" android:id="@+id/nav_chat" android:title="@string/nav_fith" app:showAsAction="ifRoom"/>
+</menu>

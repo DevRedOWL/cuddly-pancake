@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="19dp" android:width="18dp" android:viewportWidth="18" android:viewportHeight="19">
+    <path android:pathData="M17 15L1 15" android:strokeColor="#ffffff" android:strokeWidth="1.5" android:strokeLineCap="round"/>
+    <path android:pathData="M3 15L3 7.04909C3 6.25471 3.15519 5.46811 3.45672 4.7342C3.75825 4.00029 4.20021 3.33345 4.75736 2.77174C5.31451 2.21003 5.97595 1.76445 6.7039 1.46046C7.43185 1.15646 8.21207 1 9 1C9.78793 1 10.5681 1.15646 11.2961 1.46046C12.0241 1.76445 12.6855 2.21003 13.2426 2.77174C13.7998 3.33345 14.2417 4.00029 14.5433 4.7342C14.8448 5.46811 15 6.25471 15 7.04908V15" android:strokeColor="#ffffff" android:strokeWidth="1.4"/>
+    <path android:fillColor="#ffffff" android:pathData="M11 17C11 17.2626 10.9483 17.5227 10.8478 17.7654C10.7472 18.008 10.5999 18.2285 10.4142 18.4142C10.2285 18.5999 10.008 18.7472 9.76537 18.8478C9.52272 18.9483 9.26264 19 9 19C8.73736 19 8.47728 18.9483 8.23463 18.8478C7.99198 18.7472 7.7715 18.5999 7.58579 18.4142C7.40007 18.2285 7.25275 18.008 7.15224 17.7654C7.05173 17.5227 7 17.2626 7 17L9 17H11Z"/>
+</vector>

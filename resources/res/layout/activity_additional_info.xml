@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/cardView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginStart="32dp" app:cardCornerRadius="20dp" app:cardElevation="45dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/ivBack" android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/additional_info_back"/>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="22sp" android:textColor="#3b4859" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:text="@string/availableFunctions" android:fontFamily="@font/regular" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/cardView2" app:layout_constraintTop_toTopOf="0"/>
+    <ScrollView android:padding="@dimen/smallPadding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="40dp" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/textView">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/largePadding" android:paddingEnd="@dimen/largePadding">
+                <TextView android:gravity="center" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:text="@string/accessControl" android:drawableTop="@drawable/icon_fingerprint" android:drawablePadding="@dimen/smallPadding" style="@style/AdditionalInfoTitleText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/largePadding">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/familyRecognition" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/callRedirect" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/badAccessNotification" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#849ba0aa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/largePadding" android:paddingEnd="@dimen/largePadding">
+                <TextView android:gravity="center" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:text="@string/climat" android:drawableTop="@drawable/icon_thermometer" android:drawablePadding="@dimen/smallPadding" style="@style/AdditionalInfoTitleText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/largePadding">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warmFloor" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/autoOnOff" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#849ba0aa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/largePadding" android:paddingEnd="@dimen/largePadding">
+                <TextView android:gravity="center" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:text="@string/light" android:drawableTop="@drawable/icon_light" android:drawablePadding="@dimen/smallPadding" style="@style/AdditionalInfoTitleText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/largePadding">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scenarioSettings" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/autoLight" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/lightNotifications" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#849ba0aa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/largePadding" android:paddingEnd="@dimen/largePadding">
+                <TextView android:gravity="center" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:text="@string/householdAppliances" android:drawableTop="@drawable/icon_combiner" android:drawablePadding="@dimen/smallPadding" style="@style/AdditionalInfoTitleText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/largePadding">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/householdApliancesControl" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/quickAddingHouseholdAppliances" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#849ba0aa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/largePadding" android:paddingEnd="@dimen/largePadding">
+                <TextView android:gravity="center" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:text="@string/waterflowProtection" android:drawableTop="@drawable/icon_lock" android:drawablePadding="@dimen/smallPadding" style="@style/AdditionalInfoTitleText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/largePadding">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/findWaterflow" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/waterSettings" android:drawablePadding="@dimen/padding" android:drawableStart="@drawable/additional_info_arrow" style="@style/AdditionalInfoTitleText.Dark"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

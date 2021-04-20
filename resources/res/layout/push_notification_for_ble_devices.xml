@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/status" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="14sp" android:id="@+id/status_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/label_ble_search" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="8dp" android:layout_marginEnd="@dimen/base_16" android:layout_toEndOf="@+id/status" android:layout_alignParentEnd="true" style="@style/TextAppearance.Compat.Notification.Info"/>
+    <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/base_16" android:layout_below="@+id/status_description">
+        <Button android:textColor="@color/pushTextPrimary" android:id="@+id/settings" android:padding="8dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="3" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" style="@style/TextAppearance.Compat.Notification"/>
+        <Button android:id="@+id/settings1" android:background="@drawable/ic_svg_settings" android:layout_width="32dp" android:layout_height="32dp" android:backgroundTint="@color/pushTextPrimary" style="@style/TextAppearance.Compat.Notification"/>
+    </LinearLayout>
+</RelativeLayout>

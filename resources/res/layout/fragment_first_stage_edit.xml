@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_first_stage_edit_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/textSecondary" android:id="@+id/tv_stage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/label_first_stage" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Text"/>
+        <TextView android:textSize="18sp" android:textColor="@color/textPrimary" android:id="@+id/tv_label_fio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/label_fio" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_stage" style="@style/Text"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_label_fio">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilSurname" android:hint="@string/profileSurname" style="@style/EditProfileThird">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editSurname" android:tag="binding_1" style="@style/TextInputEditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilName" android:hint="@string/profileName" style="@style/EditProfileThird">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editName" android:tag="binding_2" style="@style/TextInputEditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilPatronymic" android:hint="@string/profilePatronymic" style="@style/EditProfileThird">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/editPatronimic" android:tag="binding_3" android:imeOptions="actionDone" style="@style/TextInputEditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/nextBtn" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginTop="50dp" android:layout_marginBottom="@dimen/padding" android:text="@string/button_next" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/guideline4" app:layout_constraintTop_toBottomOf="@+id/ll" app:type="radial"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

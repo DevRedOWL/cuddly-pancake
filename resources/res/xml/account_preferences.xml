@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:persistent="false" android:title="@string/pref_sipaccount" android:key="@string/pref_sipaccount_key">
+        <EditTextPreference android:persistent="false" android:title="@string/pref_username" android:dialogMessage="@string/pref_help_username" android:inputType="textNoSuggestions"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_auth_userid" android:dialogMessage="@string/pref_help_auth_userid" android:inputType="textNoSuggestions"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_passwd" android:dialogMessage="@string/pref_help_password" android:inputType="textPassword"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_domain" android:dialogMessage="@string/pref_help_domain" android:inputType="textUri"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_display_name" android:dialogMessage="@string/pref_help_display_name" android:inputType="textPersonName"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/pref_advanced_title" android:key="@string/pref_advanced_key">
+        <ListPreference android:persistent="false" android:title="@string/pref_transport" android:key="@string/pref_transport_key"/>
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_ice_enable" android:key="@string/pref_ice_enable_key"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_stun_server" android:key="@string/pref_stun_server_key" android:inputType="textUri"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_proxy" android:summary="@string/pref_help_proxy" android:inputType="textUri"/>
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_enable_outbound_proxy" android:summary="@string/pref_help_outbound_proxy" android:dialogMessage="@string/pref_help_outbound_proxy"/>
+        <EditTextPreference android:persistent="false" android:numeric="integer" android:title="@string/pref_expire_title" android:key="@string/pref_expire_key"/>
+        <EditTextPreference android:persistent="false" android:title="@string/pref_prefix" android:key="@string/pref_prefix_key"/>
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_avpf" android:key="@string/pref_avpf_key"/>
+        <EditTextPreference android:persistent="false" android:numeric="integer" android:title="@string/pref_avpf_rr_interval" android:key="@string/pref_avpf_rr_interval_key"/>
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_escape_plus" android:key="@string/pref_escape_plus_key"/>
+        <Preference android:persistent="false" android:title="@string/pref_link_account" android:key="@string/pref_link_account_key"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/pref_manage_title" android:key="@string/pref_manage_key">
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_disable_account"/>
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_default_account"/>
+        <Preference android:persistent="false" android:title="@string/pref_change_password"/>
+        <Preference android:persistent="false" android:title="@string/pref_delete_account"/>
+    </PreferenceCategory>
+</PreferenceScreen>

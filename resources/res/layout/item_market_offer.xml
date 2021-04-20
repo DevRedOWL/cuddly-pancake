@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/offersLayout" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="140dp" android:layout_height="160dp" android:layout_margin="@dimen/smallPadding" app:cardCornerRadius="5dp" app:cardElevation="4dp">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/offerImageView" android:layout_width="match_parent" android:layout_height="78dp" android:layout_marginBottom="4dp" android:scaleType="centerInside" android:adjustViewBounds="true" app:srcCompat="@android:drawable/sym_def_app_icon"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp">
+                <TextView android:textSize="12sp" android:textColor="@color/textPrimary" android:ellipsize="end" android:id="@+id/offerTitleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:maxLines="3" android:fontFamily="@font/medium" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="12sp" android:textColor="@color/textPrimary" android:gravity="end" android:id="@+id/priceTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:fontFamily="@font/bold" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintVertical_bias="1"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sv" android:tag="layout/fragment_pass_detail2_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout7" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="0">
+        <TextView android:textStyle="bold" android:layout_gravity="center" android:id="@+id/number" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="@style/Text.Big"/>
+        <ImageView android:id="@+id/barcode" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:scaleType="fitCenter" android:minHeight="300dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/openDoor" android:visibility="gone" android:layout_margin="@dimen/base_16" android:text="@string/button_open_door" app:type="4" style="@style/ButtonMainStyle.Stroke"/>
+        <include android:id="@+id/item_id_pass_parent" layout="@layout/item_id_pass_items"/>
+        <LinearLayout android:background="@color/brandBackgroundTertiary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/brandTextSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/base_16" android:text="@string/label_pass_data" style="@style/Text"/>
+        </LinearLayout>
+        <include android:id="@+id/fake10" layout="@layout/fake_1"/>
+        <include android:id="@+id/fake11" layout="@layout/fake_1"/>
+        <include android:id="@+id/fake1" layout="@layout/fake_1"/>
+        <include android:id="@+id/fake2" layout="@layout/fake_1"/>
+        <include android:id="@+id/fake3" layout="@layout/fake_1"/>
+        <include android:id="@+id/fake4" layout="@layout/fake_1"/>
+    </LinearLayout>
+</ScrollView>

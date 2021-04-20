@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dialer" android:background="@color/colorH" android:visibility="gone" android:layout_width="300dp" android:layout_height="460dp" android:layout_marginBottom="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/address_bar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginBottom="10dp" android:layout_alignParentTop="true">
+        <org.linphone.p054ui.EraseButton android:id="@+id/erase" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/backspace" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/content_description_backspace"/>
+        <org.linphone.p054ui.AddressText android:textColorHint="@color/colorE" android:ellipsize="start" android:id="@+id/address" android:background="@color/colorF" android:paddingLeft="20dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/address_bar_hint" android:layout_toLeftOf="@+id/erase" android:layout_centerVertical="true" android:inputType="textEmailAddress" style="@style/font5"/>
+    </RelativeLayout>
+    <org.linphone.p054ui.Numpad android:id="@+id/numpad" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/controls" android:layout_below="@+id/address_bar" android:layout_centerInParent="true"/>
+    <ImageView android:layout_width="100dp" android:layout_height="wrap_content" android:src="@drawable/dialer_background" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:id="@+id/controls" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_weight="1">
+            <ImageView android:id="@+id/add_contact" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/contact_add_button" android:layout_alignParentBottom="true" android:contentDescription="@string/content_description_add_contact"/>
+        </RelativeLayout>
+        <org.linphone.p054ui.CallButton android:id="@+id/call" android:background="@drawable/call" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/call_audio_start" android:layout_weight="0.5" android:contentDescription="@string/content_description_call"/>
+    </LinearLayout>
+</RelativeLayout>

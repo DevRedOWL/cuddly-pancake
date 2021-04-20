@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account" android:textAllCaps="true" style="@style/font6"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_validate_account_1" style="@style/font11"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/send_email" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/font6"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_validate_account_2" style="@style/font11"/>
+        <Button android:textColor="@drawable/assistant_button_text_color" android:id="@+id/assistant_check" android:background="@drawable/assistant_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="10dp" android:text="@string/assistant_finish" style="@style/font8"/>
+    </LinearLayout>
+</ScrollView>

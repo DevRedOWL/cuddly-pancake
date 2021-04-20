@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_profile_selection_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivLogo" android:layout_width="match_parent" android:layout_height="150dp" android:layout_margin="@dimen/largePadding" android:src="@drawable/logo_big" android:adjustViewBounds="true"/>
+        <TextView android:textSize="20sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/label_choose_main" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" style="@style/Text"/>
+        <include android:id="@+id/new_flat" layout="@layout/item_profile_chooser"/>
+        <include android:id="@+id/justUjin" layout="@layout/item_profile_chooser"/>
+        <include android:id="@+id/commerce" layout="@layout/item_profile_chooser"/>
+        <include android:id="@+id/uk" layout="@layout/item_profile_chooser"/>
+        <include android:id="@+id/demo" android:visibility="gone" layout="@layout/item_profile_chooser"/>
+        <TextView android:textSize="15sp" android:textColor="@color/brandTextAsBrandMain" android:gravity="center" android:layout_gravity="center" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/largePadding" android:textAlignment="center" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" style="@style/Text"/>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="50dp" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="50dp" android:text="@string/button_next" app:radius="8sp" app:type="radial"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/backgroundPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/notificationListScrollView" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/notificationListView" android:paddingBottom="80dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/tvNoNotifications" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/no_notifications" android:layout_centerInParent="true" android:fontFamily="@font/regular"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:id="@+id/cvRemoveAll" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/padding" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/padding" app:cardBackgroundColor="@color/float_button_background" app:cardCornerRadius="24dp" app:cardElevation="0dp">
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnRemoveAll" android:background="@color/float_button_background" android:layout_width="48dp" android:layout_height="48dp" android:tint="@color/textPrimary" app:srcCompat="@drawable/icon_close"/>
+    </androidx.cardview.widget.CardView>
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

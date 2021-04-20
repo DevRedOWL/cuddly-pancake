@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/flatLayout" android:background="@drawable/card_container_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/smallPadding" android:paddingBottom="@dimen/smallPadding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivFlatPlan" android:paddingBottom="2dp" android:layout_width="100dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/smallPadding" android:adjustViewBounds="true" android:contentDescription="@string/app_name" android:paddingEnd="2dp" app:srcCompat="@drawable/empty_image"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ivFlatHeart" android:padding="4dp" android:layout_width="24dp" android:layout_height="22dp" android:tint="@color/color_favorite_flat" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name_app" android:layout_alignParentEnd="true" app:srcCompat="@drawable/icon_favourite_off"/>
+                <TextView android:textSize="14sp" android:textColor="@color/textPrimary" android:id="@+id/tvComplexTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ivFlatHeart" android:layout_centerVertical="true" android:fontFamily="@font/medium" android:layout_toStartOf="@+id/ivFlatHeart"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/textPrimary" android:id="@+id/tvInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ivFlatHeart" android:layout_centerVertical="true" android:fontFamily="@font/regular" android:layout_toStartOf="@+id/ivFlatHeart"/>
+            <TextView android:textSize="13sp" android:textColor="@color/textSecondary" android:id="@+id/tvFlatInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/textPrimary" android:id="@+id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+                <TextView android:textSize="14sp" android:textColor="@color/textSecondary" android:id="@+id/tvPriceOld" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/smallPadding"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivAction" android:background="@drawable/action_background" android:paddingTop="32dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/star" android:tint="@color/brandBackgroundPrimary" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:paddingStart="32dp"/>
+</RelativeLayout>

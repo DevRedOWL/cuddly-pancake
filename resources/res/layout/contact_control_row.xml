@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/colorE" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/colorE" android:id="@+id/address_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerInParent="true" android:textAllCaps="true"/>
+            <ImageView android:id="@+id/friendLinphone" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/linphone_user" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="marquee" android:gravity="center" android:id="@+id/numeroOrAddress" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" style="@style/font6"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/contact_call" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="10dp" android:src="@drawable/call_start_body_default" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/content_description_call"/>
+            <ImageView android:id="@+id/contact_chat" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="10dp" android:src="@drawable/chat_start_body_default" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/content_description_chat"/>
+        </LinearLayout>
+    </LinearLayout>
+</TableRow>

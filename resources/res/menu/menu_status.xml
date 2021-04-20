@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/background_light">
+    <item android:textSize="8dp" android:id="@+id/status_guest_id" android:title="@string/status_guest"/>
+    <item android:textSize="8dp" android:id="@+id/status_owner_id" android:title="@string/status_owner"/>
+    <item android:textSize="8dp" android:id="@+id/status_liver_id" android:title="@string/status_live"/>
+    <item android:textSize="8dp" android:id="@+id/status_enter_id" android:title="@string/status_enter"/>
+</menu>

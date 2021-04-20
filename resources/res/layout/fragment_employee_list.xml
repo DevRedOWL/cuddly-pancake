@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvEmployeeList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/tvNoEmployees" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/empty_employee_list" android:layout_centerInParent="true" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/padding"/>
+    <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnAddEmployee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mainButtonHeight" android:layout_margin="@dimen/padding" android:text="@string/btn_add_employer" android:layout_alignParentBottom="true" android:textAllCaps="false" app:type="radial"/>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="74dp" android:layout_height="74dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

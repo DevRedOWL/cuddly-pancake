@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/view4" android:background="@color/brandTextPrimary" android:layout_width="0dp" android:layout_height="2dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/label" app:layout_constraintStart_toStartOf="@+id/label" app:layout_constraintTop_toBottomOf="0"/>

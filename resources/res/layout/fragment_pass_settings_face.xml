@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pass_settings_face_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/id1" layout="@layout/item_pass_id_title_with_image"/>
+        <LinearLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/base_16">
+            <include android:id="@+id/choose1" layout="@layout/item_label_underline_with_arrow_2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/parent" android:tag="binding_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/id2" layout="@layout/item_pass_id_title_with_image"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/delete_face" android:visibility="gone" android:layout_margin="@dimen/base_16" android:text="@string/button_delete_face" app:type="4" style="@style/ButtonMainStyle.Stroke"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

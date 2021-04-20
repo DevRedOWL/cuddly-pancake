@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/til" android:hint="myHint" style="@style/EditProfileThird">
+    <com.google.android.material.textfield.TextInputEditText android:id="@+id/edit" style="@style/TextInputEditText"/>
+</com.google.android.material.textfield.TextInputLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="org.linphone.StatusFragment" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/side_menu" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/status">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/top_bar" android:background="@color/colorF" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentTop="true">
+                <TextView android:gravity="center_vertical" android:id="@+id/menu_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/settings" android:layout_centerInParent="true" style="@style/font1"/>
+                <ImageView android:id="@+id/cancel" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/dialer_back" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@string/content_description_dialer_back"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/top_bar">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@+id/history" android:background="@drawable/footer_button" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/footer_history" android:layout_centerInParent="true" android:contentDescription="@string/content_description_history"/>
+                    <View android:id="@+id/history_select" android:background="@color/colorA" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+                    <TextView android:gravity="center" android:id="@+id/missed_calls" android:background="@drawable/history_chat_indicator" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="15dp" style="@style/font18"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/contacts" android:background="@drawable/footer_button" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/footer_contacts" android:layout_centerInParent="true" android:contentDescription="@string/content_description_contacts"/>
+                    <View android:id="@+id/contacts_select" android:background="@color/colorA" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/dialer" android:background="@drawable/footer_button" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/footer_dialer" android:layout_centerInParent="true" android:contentDescription="@string/content_description_dialer"/>
+                    <View android:id="@+id/dialer_select" android:background="@color/colorA" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/chat" android:background="@drawable/footer_button" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/footer_chat" android:layout_centerInParent="true" android:contentDescription="@string/content_description_chat_button"/>
+                    <View android:id="@+id/chat_select" android:background="@color/colorA" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+                    <TextView android:gravity="center" android:id="@+id/missed_chats" android:background="@drawable/history_chat_indicator" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="15dp" style="@style/font18"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fragmentContainer2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="left" android:id="@+id/side_menu_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="bottom" android:id="@+id/side_menu_quit" android:background="@color/colorA" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/quit_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quit" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:gravity="center_vertical" android:id="@+id/quit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quit" android:layout_toRightOf="@+id/quit_button" android:layout_centerInParent="true" style="@style/font14"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/side_menu_quit">
+                <include layout="@layout/side_menu_main_account"/>
+                <ListView android:id="@+id/accounts_list" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:choiceMode="singleChoice"/>
+                <ListView android:id="@+id/item_list" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/colorH" android:divider="@color/colorE" android:dividerHeight="1dp" android:choiceMode="singleChoice" android:footerDividersEnabled="true"/>
+                <View android:background="@color/colorE" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

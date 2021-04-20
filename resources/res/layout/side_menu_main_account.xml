@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/default_account" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="70dp" android:contentDescription="@string/content_description_default_account">
+    <ImageView android:id="@+id/main_account_avatar" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/avatar" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/main_account_avatar">
+        <TextView android:id="@+id/main_account_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/font7"/>
+        <TextView android:id="@+id/main_account_address" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/font3"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/main_account_status" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="10dp" android:src="@drawable/status_available" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

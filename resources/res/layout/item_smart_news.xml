@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginLeft="@dimen/smallPadding" android:layout_marginTop="@dimen/smallPadding" android:layout_marginRight="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding" android:foreground="?android:attr/selectableItemBackground" app:cardBackgroundColor="@color/cardBackgroundPrimary" app:cardCornerRadius="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="130dp">
+        <ImageView android:id="@+id/ivNewsImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvNewsTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smallPadding" android:fontFamily="@font/bold" android:layout_marginStart="@dimen/smallPadding" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

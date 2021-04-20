@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:id="@+id/title_account_activation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account" android:textAllCaps="true" style="@style/font6"/>
+        <TextView android:gravity="center_horizontal" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account_part_2" style="@style/font11"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/send_phone_number" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/font6"/>
+        <TextView android:gravity="center_horizontal" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account_part_3" style="@style/font11"/>
+        <EditText android:textColor="@color/colorB" android:gravity="center" android:id="@+id/assistant_code" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="number" android:contentDescription="@string/content_description_activation_code_field"/>
+        <Button android:textColor="@drawable/assistant_button_text_color" android:id="@+id/assistant_check" android:background="@drawable/assistant_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="@string/assistant_activate" style="@style/font8"/>
+    </LinearLayout>
+</ScrollView>

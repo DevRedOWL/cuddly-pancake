@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@color/transparent" android:paddingTop="@dimen/toolbar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerTowns" android:background="@drawable/background_container_white_rounded" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivClose" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="4dp" android:adjustViewBounds="false" android:tint="@color/textTertiary" android:cropToPadding="false" app:srcCompat="@drawable/icon_close"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/textTertiary" android:id="@+id/textCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" android:fontFamily="@font/regular" style="@style/spinnerItemStyle"/>
+    </LinearLayout>
+</LinearLayout>

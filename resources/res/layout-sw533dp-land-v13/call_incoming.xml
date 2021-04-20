@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/topLayout" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="org.linphone.StatusFragment" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <RelativeLayout android:id="@+id/top_bar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/status">
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/incoming_call" style="@style/font1"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/contact_detail" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/menu" android:layout_below="@+id/top_bar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="center" android:id="@+id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <ImageView android:id="@+id/contact_picture" android:layout_width="200dp" android:layout_height="wrap_content" android:src="@drawable/avatar" android:adjustViewBounds="true" android:contentDescription="@string/content_description_contact_picture"/>
+                <ImageView android:layout_width="200dp" android:layout_height="wrap_content" android:src="@drawable/avatar_mask_border" android:adjustViewBounds="true" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@+id/contact_name" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/font5"/>
+                <TextView android:layout_gravity="center" android:id="@+id/contact_number" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/contact_name" android:layout_centerHorizontal="true" style="@style/font2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/menu" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/decline" android:background="@drawable/hangup" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_hangup" android:layout_weight="1" android:contentDescription="@string/content_description_decline"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/acceptUnlock" android:background="@color/colorA" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_accept"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_accept" android:alpha="0.6"/>
+            <ImageView android:id="@+id/acceptArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_accept" android:alpha="0.2"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/accept" android:background="@drawable/call" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_audio_start" android:layout_weight="1" android:contentDescription="@string/content_description_accept"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/declineUnlock" android:background="@color/colorD" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/arrow_hangup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_hangup" android:alpha="0.2"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_hangup" android:alpha="0.6"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_hangup"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

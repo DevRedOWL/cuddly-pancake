@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tlParking" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/brandBackgroundPrimary" app:tabGravity="1" app:tabIndicatorColor="@color/brandTabsUnderline" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="5dp" app:tabMode="1" app:tabSelectedTextColor="@color/brandTabsTextSelected" app:tabTextAppearance="@style/TabText" app:tabTextColor="@color/brandTabsText">
+            <com.google.android.material.tabs.TabItem android:id="@+id/mySlots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/parkingMySlots"/>
+            <com.google.android.material.tabs.TabItem android:id="@+id/guests" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/parkingGuests"/>
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vpParking" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

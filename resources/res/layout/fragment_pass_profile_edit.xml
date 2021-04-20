@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_pass_profile_edit_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+            <include android:id="@+id/first" layout="@layout/item_profile_editable2"/>
+            <include android:id="@+id/second" layout="@layout/item_profile_editable2"/>
+            <include android:id="@+id/third" layout="@layout/item_profile_editable2"/>
+            <include android:id="@+id/profile1" android:visibility="gone" layout="@layout/item_profile_editable"/>
+            <include android:id="@+id/profile2" layout="@layout/item_profile_editable2"/>
+            <include android:id="@+id/profile5" layout="@layout/item_profile_editable"/>
+            <include android:id="@+id/profile6" layout="@layout/item_profile_editable2"/>
+            <include android:id="@+id/profile7" layout="@layout/item_pass_profile_empty"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/pbar" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="200dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>

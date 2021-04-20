@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" app:cardCornerRadius="5dp" app:cardElevation="3dp">
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <ImageView android:layout_gravity="top" android:id="@+id/imageView_pager_ID" android:layout_width="56dp" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@android:drawable/sym_def_app_icon"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginStart="24dp">
+            <TextView android:textSize="15sp" android:textColor="@color/textPrimary" android:id="@+id/textView_pager_header_ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/medium"/>
+            <TextView android:textSize="13sp" android:id="@+id/textView_pager_ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

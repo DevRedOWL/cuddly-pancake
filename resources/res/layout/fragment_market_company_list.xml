@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/backgroundPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/companyListScrollView" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/companyListView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/smallProgressBar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="@dimen/padding" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyle"/>
+            <TextView android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/noOffersTextView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/noCompanies" android:layout_centerInParent="true" android:fontFamily="@font/regular"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

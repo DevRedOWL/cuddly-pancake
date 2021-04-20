@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/separator" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/separator_text" android:layout_width="match_parent" android:layout_height="40dp" style="@style/font1"/>
+        <ImageView android:background="@color/colorE" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="5dp">
+        <RelativeLayout android:gravity="center" android:id="@+id/avatar_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@+id/contact_picture" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:src="@drawable/avatar" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:contentDescription="@string/content_description_contact_picture"/>
+            <ImageView android:id="@+id/mask" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:src="@drawable/avatar_mask" android:adjustViewBounds="true" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <CheckBox android:id="@+id/delete" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@string/content_description_delete"/>
+        <ImageView android:id="@+id/friendStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/led_connected" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/friendLinphone" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/linphone_user" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_toLeftOf="@+id/delete" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/friendLinphone" android:layout_toRightOf="@+id/avatar_layout" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_alignParentTop="true" style="@style/font6"/>
+            <TextView android:id="@+id/contactOrganization" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentBottom="true" style="@style/font9"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

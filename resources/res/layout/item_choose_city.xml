@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/base_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/labelSection" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/label_choose_city" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Text"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_border_only_white" android:layout_width="0dp" android:layout_height="48dp" android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="@+id/labelSection" app:layout_constraintStart_toStartOf="@+id/labelSection" app:layout_constraintTop_toBottomOf="@+id/labelSection">
+        <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:paddingStart="8dp" android:paddingEnd="8dp" style="@style/Text.Big"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/arrow" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_svg_arrow_down" android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

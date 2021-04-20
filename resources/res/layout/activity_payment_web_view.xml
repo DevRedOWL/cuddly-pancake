@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/toolbarColor" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageBack" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:adjustViewBounds="true" android:tint="@color/toolbarIconTint" android:paddingStart="@dimen/padding" android:layout_alignParentStart="true" app:srcCompat="@drawable/icon_back"/>
+        <TextView android:textSize="15sp" android:textColor="@color/toolbarTextTint" android:ellipsize="end" android:gravity="center" android:id="@+id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_by_card" android:lines="1" android:layout_centerInParent="true" android:fontFamily="@font/bold" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding"/>
+        <View android:background="@color/backgroundTertiary" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="?android:attr/progressBarStyleLarge"/>
+        <WebView android:id="@+id/webView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

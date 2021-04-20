@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/List_Flats_ID" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/info_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView_ipoteka_ID" android:layout_width="75dp" android:layout_height="75dp" android:layout_margin="16dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_ipoteka_ID" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_toRightOf="@+id/imageView_ipoteka_ID" android:layout_toEndOf="@+id/imageView_ipoteka_ID">
+            <TextView android:textSize="15sp" android:textColor="@color/textPrimary" android:id="@+id/textTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:fontFamily="@font/regular"/>
+            <TextView android:textSize="13sp" android:textColor="@color/textSecondary" android:id="@+id/textViewDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:fontFamily="@font/regular"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

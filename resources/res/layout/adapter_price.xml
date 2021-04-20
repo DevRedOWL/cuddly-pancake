@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/corner1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="58dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageArrow" android:layout_width="wrap_content" android:layout_height="14dp" android:adjustViewBounds="true" android:tint="@color/textPrimary" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="180" android:layout_alignParentEnd="true" app:srcCompat="@drawable/icon_back"/>
+    <TextView android:textSize="13sp" android:textColor="@color/textPrimary" android:id="@+id/textView_Count_ID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/imageArrow" android:layout_centerVertical="true" android:fontFamily="@font/medium" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/imageArrow"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="13sp" android:textColor="@color/textPrimary" android:id="@+id/TextView_Title_ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+        <TextView android:textSize="12sp" android:textColor="@color/textSecondary" android:id="@+id/TextView_Text_ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+    </LinearLayout>
+</RelativeLayout>

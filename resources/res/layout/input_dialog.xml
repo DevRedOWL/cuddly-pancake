@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/customText" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/font14"/>
+    <EditText android:textColor="@color/colorB" android:id="@+id/password" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="20dp" android:hint="@string/password" android:maxLines="1" android:inputType="textPassword" android:textCursorDrawable="@null"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancel" android:background="@drawable/resizable_cancel_button" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/cancel" style="@style/font8"/>
+        <Button android:id="@+id/retry" android:background="@drawable/resizable_confirm_delete_button" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/retry" style="@style/font15"/>
+    </LinearLayout>
+</LinearLayout>

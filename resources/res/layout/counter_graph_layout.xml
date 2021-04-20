@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/no_data_label" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="8dp" android:text="НЕТ ДАННЫХ" android:fontFamily="@font/regular" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/label" android:background="@drawable/edit_corner" android:padding="@dimen/base_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:fontFamily="@font/regular" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/chart" android:layout_width="match_parent" android:layout_height="420dp" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/label"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/table" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:stretchColumns="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/chart"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ExpandableListView android:layout_gravity="left" android:id="@+id/statusMenu_list_ID" android:layout_width="match_parent" android:layout_height="wrap_content" android:groupIndicator="@android:color/background_light" android:layoutDirection="locale" android:nestedScrollingEnabled="false" android:foregroundTintMode="src_over"/>
+    </LinearLayout>
+</ScrollView>

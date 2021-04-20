@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding">
+        <LinearLayout android:id="@+id/apartmentParent" android:background="@color/brandBackgroundTertiary" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textColor="@color/brandTextPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/apartmentTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/choose_acceptance_date" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+        </LinearLayout>
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView android:id="@+id/horizontalCalendarView" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:textColorNormal="@color/brandTextPrimary" app:textColorSelected="@color/brandTextPrimary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/timeSlotsView" android:paddingTop="@dimen/padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/noTimeSlotsLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:layout_marginTop="50dp">
+        <TextView android:textSize="20sp" android:textColor="@color/textPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/noTimeSlotsTitle" android:fontFamily="@font/bold"/>
+        <TextView android:textSize="18sp" android:textColor="@color/textPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/noTimeSlotsMessage" android:fontFamily="@font/regular"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="100dp" style="?android:attr/progressBarStyle"/>
+</LinearLayout>

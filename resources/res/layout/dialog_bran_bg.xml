@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/brandBackgroundPrimary" android:padding="@dimen/base_16" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_pass_confirm" style="@style/Text"/>
+    <TextView android:textSize="16sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" android:text="@string/label_pass_message" style="@style/Text.Big"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/brandMain" android:gravity="center" android:id="@+id/close" android:padding="@dimen/base_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_close" android:layout_weight="1" style="@style/Text"/>
+        <TextView android:textSize="16sp" android:textColor="@color/brandMain" android:gravity="center" android:id="@+id/share" android:padding="@dimen/base_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share" android:layout_weight="1" style="@style/Text"/>
+    </LinearLayout>
+</LinearLayout>

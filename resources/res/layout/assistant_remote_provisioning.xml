@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_remote_provisioning_title" android:textAllCaps="true" style="@style/font6"/>
+    <TextView android:gravity="center" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_remote_provisioning_desc" style="@style/font11"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/remote_provisioning_url" android:textAllCaps="true" style="@style/font13"/>
+        <EditText android:textColor="@color/colorB" android:id="@+id/assistant_remote_provisioning_url" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="textUri" android:contentDescription="@string/content_description_url_field"/>
+        <Button android:textColor="@drawable/assistant_button_text_color" android:id="@+id/assistant_apply" android:background="@drawable/assistant_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="@string/assistant_fetch_apply" style="@style/font8"/>
+    </LinearLayout>
+</LinearLayout>

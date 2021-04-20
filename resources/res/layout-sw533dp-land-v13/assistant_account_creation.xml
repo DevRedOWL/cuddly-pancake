@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:id="@+id/assistant_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account" android:textAllCaps="true" style="@style/font6"/>
+        <TextView android:layout_gravity="center" android:id="@+id/message_create_account" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_create_account_part_1" style="@style/font11"/>
+        <TableLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <TableRow android:gravity="center" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/phone_number_layout" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/phone_number_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/phone_number" android:textAllCaps="true" style="@style/font13"/>
+                        <ImageView android:id="@+id/info_phone_number" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/info" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                        <Button android:id="@+id/select_country" android:background="@drawable/resizable_assistant_button" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/select_your_country" android:layout_weight="1" style="@style/font8"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <EditText android:textColor="@color/colorB" android:gravity="center" android:id="@+id/dial_code" android:background="@drawable/resizable_textfield" android:layout_width="65dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:text="+" android:maxLines="1" android:inputType="phone"/>
+                                <EditText android:textColor="@color/colorB" android:id="@+id/phone_number" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="phone" android:contentDescription="@string/content_description_phone_number_field"/>
+                            </LinearLayout>
+                            <TextView android:id="@+id/phone_number_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error" style="@style/font20"/>
+                            <TextView android:id="@+id/sip_uri" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/font9"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/username_layout" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="0" android:layout_weight="1">
+                    <TextView android:id="@+id/username_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/username" android:textAllCaps="true" style="@style/font13"/>
+                    <EditText android:textColor="@color/colorB" android:id="@+id/username" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="textNoSuggestions" android:contentDescription="@string/content_description_username_field"/>
+                    <TextView android:id="@+id/username_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error" style="@style/font20"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/password_layout" android:paddingLeft="30dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="1" android:layout_weight="1">
+                    <TextView android:id="@+id/password_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/password" android:textAllCaps="true" style="@style/font13"/>
+                    <EditText android:textColor="@color/colorB" android:id="@+id/password" android:background="@drawable/resizable_textfield" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="textPassword" android:textCursorDrawable="@null"/>
+                    <TextView android:id="@+id/password_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error" style="@style/font20"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/email_layout" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="0" android:layout_weight="1">
+                    <TextView android:id="@+id/email_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/email" android:textAllCaps="true" style="@style/font13"/>
+                    <EditText android:textColor="@color/colorB" android:id="@+id/email" android:background="@drawable/resizable_textfield" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="textEmailAddress" android:contentDescription="@string/content_description_email_field" android:textCursorDrawable="@null"/>
+                    <TextView android:id="@+id/email_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error" style="@style/font20"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/password_confirm_layout" android:paddingLeft="30dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="1" android:layout_weight="1">
+                    <TextView android:id="@+id/confirm_password_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirm_password" android:textAllCaps="true" style="@style/font13"/>
+                    <EditText android:textColor="@color/colorB" android:id="@+id/confirm_password" android:background="@drawable/resizable_textfield" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:maxLines="1" android:inputType="textPassword" android:contentDescription="@string/content_description_confirm_password_field" android:textCursorDrawable="@null"/>
+                    <TextView android:id="@+id/confirm_password_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error" style="@style/font20"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="left" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <CheckBox android:id="@+id/use_username" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:layout_column="1" android:text="@string/use_username_instead_or_phone_number"/>
+            </TableRow>
+            <TableRow android:gravity="left" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <CheckBox android:id="@+id/use_email" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:layout_column="1" android:text="@string/use_email_for_validation"/>
+            </TableRow>
+        </TableLayout>
+        <Button android:textColor="@drawable/assistant_button_text_color" android:layout_gravity="center" android:id="@+id/assistant_create" android:background="@drawable/assistant_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="@string/assistant_create_account" style="@style/font8"/>
+        <TextView android:textColor="@drawable/assistant_button_text_color" android:layout_gravity="center" android:id="@+id/assistant_skip" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/maybe_later" style="@style/font10"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/delete_message" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:button="@drawable/checkbox" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:contentDescription="@string/content_description_delete"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/delete_message">
+            <RelativeLayout android:id="@+id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/contact_picture" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/avatar" android:adjustViewBounds="true" android:contentDescription="@string/content_description_contact_picture"/>
+                <ImageView android:id="@+id/mask" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/avatar_chat_mask" android:adjustViewBounds="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@+id/contact_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:autoLink="web" android:linksClickable="true" android:id="@+id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/font11"/>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/relativeLayoutCentered" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/image" android:visibility="gone" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:scaleType="centerInside"/>
+                        <TextView android:gravity="center" android:id="@+id/file_extension" android:layout_width="150dp" android:layout_height="wrap_content" android:text="FILE" android:maxLines="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textAlignment="center" style="@style/font25"/>
+                    </RelativeLayout>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/file_name" android:layout_width="150dp" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_below="@+id/relativeLayoutCentered" android:textAlignment="center" style="@style/font24"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/file_transfer_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@+id/progress_bar" android:paddingRight="5dp" android:layout_width="150dp" android:layout_height="5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" style="@style/Widget.ProgressBar.Horizontal"/>
+                    <Button android:id="@+id/file_transfer_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/progress_bar"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/imdmLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_alignParentRight="true">
+                    <TextView android:textSize="12sp" android:id="@+id/imdmText" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Displayed"/>
+                    <ImageView android:id="@+id/imdmIcon" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="2dp" android:src="@drawable/valid" android:scaleType="fitCenter"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:paddingTop="5dp" android:paddingBottom="3dp" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignTop="@+id/background" android:layout_alignRight="@+id/background">
+            <ImageView android:id="@+id/status" android:paddingRight="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/content_description_message_status"/>
+            <ProgressBar android:id="@+id/inprogress" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

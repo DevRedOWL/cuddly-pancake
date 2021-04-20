@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="plurals_device_count">
+        <item quantity="zero">нет устройств</item>
+        <item quantity="one">%1$d устройство</item>
+        <item quantity="two">%1$d устройства</item>
+        <item quantity="few">%1$d устройства</item>
+        <item quantity="many">%1$d устройств</item>
+        <item quantity="other">%1$d устройств</item>
+    </plurals>
+</resources>

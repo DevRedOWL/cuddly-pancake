@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_id_pass_items_0" android:background="@color/brandBackgroundTertiary" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/brandTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/base_16" android:text="@string/label_id_settings" style="@style/Text"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="6dp">
+            <include android:id="@+id/id1" layout="@layout/item_image"/>
+            <include android:id="@+id/id2" layout="@layout/item_image"/>
+            <include android:id="@+id/id3" layout="@layout/item_image"/>
+            <include android:id="@+id/id4" layout="@layout/item_image"/>
+            <include android:id="@+id/id5" layout="@layout/item_image"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/pbar" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

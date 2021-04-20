@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_another_pass_0" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:id="@+id/sv" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_8">
+            <include android:id="@+id/title1" layout="@layout/item_another_title"/>
+            <RadioGroup android:id="@+id/location_radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/dividerOverlay" android:checkedButton="@+id/btnPassTime" android:showDividers="none|beginning|middle|end" android:layout_marginStart="@dimen/base_16">
+                <RadioButton android:textSize="16sp" android:textStyle="bold" android:textColor="@color/brandTextPrimary" android:textColorHighlight="@color/brandMain" android:id="@+id/btnPassTime" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:text="@string/anotherPassTimespan"/>
+                <RadioButton android:textSize="16sp" android:textStyle="bold" android:textColor="@color/brandTextPrimary" android:textColorHighlight="@color/brandMain" android:id="@+id/btnPassOneTime" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:text="@string/anotherPassOneTime"/>
+            </RadioGroup>
+            <TextView android:textSize="15sp" android:textColor="@color/brandMain" android:gravity="center" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/smallPadding" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" style="@style/Text"/>
+            <include android:id="@+id/title2" layout="@layout/item_another_guest_data_title"/>
+            <include android:id="@+id/data1" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data2" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data3" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data4" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data6" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data7" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/title3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" layout="@layout/item_another_title"/>
+            <include android:id="@+id/data8" layout="@layout/item_another_pass_data_2"/>
+            <include android:id="@+id/data9" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data10" layout="@layout/item_another_pass_data_2"/>
+            <include android:id="@+id/title4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" layout="@layout/item_another_title"/>
+            <include android:id="@+id/data11" layout="@layout/item_another_pass_data_2"/>
+            <include android:id="@+id/data12" layout="@layout/item_another_pass_data_2"/>
+            <include android:id="@+id/data13" layout="@layout/item_another_pass_data_2"/>
+            <include android:id="@+id/data14" layout="@layout/item_another_pass_data_2"/>
+            <TextView android:textSize="15sp" android:textColor="@color/brandTextSecondary" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_8" android:layout_marginBottom="@dimen/base_8" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" android:layout_marginBottom="@dimen/base_16">
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/today" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/base_8" android:text="@string/label_today" android:layout_weight="1" app:radius="8dp" app:type="4"/>
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/tomorrow" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/base_8" android:text="@string/label_tomorrow" android:layout_weight="1" app:radius="8dp" app:type="4"/>
+            </LinearLayout>
+            <include android:id="@+id/title5" layout="@layout/item_another_title"/>
+            <include android:id="@+id/company" layout="@layout/item_field_spinner"/>
+            <include android:id="@+id/data16" layout="@layout/item_another_pass_data"/>
+            <View android:id="@+id/paddingGroup" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/padding"/>
+            <include android:id="@+id/title7" android:visibility="gone" layout="@layout/item_another_title"/>
+            <include android:id="@+id/data17" android:visibility="gone" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/title10" layout="@layout/item_another_guest_data_title"/>
+            <include android:id="@+id/title9" layout="@layout/item_another_title"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llZoneSlots" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding"/>
+            <TextView android:textSize="14sp" android:textColor="@color/brandTextSecondary" android:id="@+id/tvNoPlaces" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_8" android:text="@string/label_no_parking_places" android:layout_marginStart="@dimen/base_16" android:layout_marginEnd="@dimen/base_16" style="@style/Text"/>
+            <include android:id="@+id/title8" layout="@layout/item_another_title"/>
+            <include android:id="@+id/data18" layout="@layout/item_another_pass_data"/>
+            <include android:id="@+id/data19" app:hint="А000АА000" layout="@layout/item_another_pass_data_with_hint"/>
+            <CheckBox android:textColor="@color/brandTextPrimary" android:id="@+id/checkboxDifferentVehicleType" android:tag="binding_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/differentVehicleNumberType" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding"/>
+            <include android:id="@+id/title6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" layout="@layout/item_another_title"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llAdditional" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_16" android:layout_marginBottom="@dimen/base_16" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/smallPadding">
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/auto" android:tag="binding_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/base_8" android:text="@string/button_auto" android:layout_weight="1" app:radius="8dp" app:type="4"/>
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/group" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/base_8" android:text="@string/button_group" android:layout_weight="1" app:radius="8dp" app:type="4"/>
+            </LinearLayout>
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/rent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/button_rent" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:radius="8dp" app:type="4"/>
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/button_save_pass" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:radius="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

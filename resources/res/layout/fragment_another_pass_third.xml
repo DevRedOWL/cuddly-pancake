@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/textSecondary" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/anotherPassGuestData" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Text"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llGuestInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/parkingSurname" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etSurname" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/parkingName" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/parkingPatronymic" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPatronymic" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smallPadding" android:hint="@string/parkingPhone" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <p035ru.unicorn.ujin.view.customViews.fields.PhoneMaskedEditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smallPadding" android:hint="@string/parkingUserCompany" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCompany" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilBrand" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/anotherPassCarBrand" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etBrand" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/parkingCarLicencePlate" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etLicencePlate" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:fontFamily="@font/regular" style="@style/EditProfile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

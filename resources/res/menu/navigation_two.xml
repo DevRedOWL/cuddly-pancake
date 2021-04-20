@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/icon_development" android:textSize="8dp" android:id="@+id/navigation_development_id" android:title="@string/title_build"/>
+    <item android:icon="@drawable/icon_key" android:textSize="8dp" android:id="@+id/navigation_my_flat_id" android:title="@string/navigationMyFlat"/>
+    <item android:icon="@drawable/icon_developer" android:textSize="8dp" android:id="@+id/navigation_builder_id" android:title="@string/title_developer"/>
+    <item android:icon="@drawable/icon_news" android:textSize="8dp" android:id="@+id/navigation_news_id" android:title="@string/title_news"/>
+    <item android:icon="@drawable/icon_chat" android:textSize="8dp" android:id="@+id/navigation_chats_id" android:title="@string/title_chats"/>
+</menu>

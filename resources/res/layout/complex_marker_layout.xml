@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_store_marker" android:background="@color/transparent" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/backgroundPrimary" app:cardCornerRadius="4dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/marker_text" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/marker_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp" app:srcCompat="@drawable/icon_map_builder_pin"/>
+</LinearLayout>

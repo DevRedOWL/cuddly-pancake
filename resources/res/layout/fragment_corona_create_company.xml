@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_corona_create_company_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/first" layout="@layout/item_pass_company"/>
+            <include android:id="@+id/second" layout="@layout/item_pass_company"/>
+            <include android:id="@+id/third" layout="@layout/item_pass_company"/>
+            <include android:id="@+id/fourth" layout="@layout/item_pass_company"/>
+            <include android:id="@+id/fiveth" layout="@layout/item_pass_company"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnAddINN" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/addCompanyAddINN" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/smallPadding" app:type="4"/>
+                <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnAddOGRN" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/addCompanyAddOGRN" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/padding" app:type="4"/>
+            </LinearLayout>
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnAddRent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/addCompanyAddRent" android:layout_weight="1" app:type="4"/>
+            <TextView android:textSize="16sp" android:textColor="@color/brandTextSecondary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addCompanyDocsDescription" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/largePadding" android:layout_marginEnd="@dimen/largePadding"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rvDocuments" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:reverseLayout="false"/>
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btn_create_pass" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/button_create" app:radius="@dimen/mainButtonRadius" app:type="radial"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/pb" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

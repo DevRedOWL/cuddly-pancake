@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_apartment_list_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/btnApplyChanges" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/apartmentParent" android:background="@color/brandBackgroundTertiary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+                <TextView android:textColor="@color/brandTextPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/apartmentTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/label_non_commerce_apart" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+            </LinearLayout>
+            <RadioGroup android:id="@+id/rgApartmentList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:divider="@color/profileButtonsDivider" android:showDividers="middle"/>
+            <LinearLayout android:id="@+id/commerceParent" android:background="@color/brandBackgroundTertiary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+                <TextView android:textColor="@color/brandTextPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/commerceTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/label_commerce_apart" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+            </LinearLayout>
+            <RadioGroup android:id="@+id/rgCommerceList" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/profileButtonsDivider" android:showDividers="middle"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btnApplyChanges" android:layout_width="match_parent" android:layout_height="@dimen/mainButtonHeight" android:layout_margin="@dimen/padding" android:text="@string/changeApartmentApply" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:type="radial"/>
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="@dimen/smallPadding" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

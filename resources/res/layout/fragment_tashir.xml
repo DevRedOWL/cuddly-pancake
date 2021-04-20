@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:autoLink="none" android:id="@+id/tvTashir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tashirText" android:fontFamily="@font/regular" app:layout_constraintTop_toTopOf="0" style="@style/ServiceStaticTextStyle"/>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/buttonCallSellCenter" android:layout_width="match_parent" android:layout_height="@dimen/mainButtonHeight" android:text="@string/callSellCenter" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintTop_toBottomOf="@+id/tvTashir" app:type="sweep"/>
+        <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/buttonSendRequest" android:layout_width="match_parent" android:layout_height="@dimen/mainButtonHeight" android:layout_marginTop="@dimen/padding" android:text="@string/tashirSendRequest" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintTop_toBottomOf="@+id/buttonCallSellCenter" app:type="sweep"/>
+        <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" android:indeterminate="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

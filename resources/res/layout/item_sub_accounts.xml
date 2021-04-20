@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/smallPadding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/smallPadding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="@color/textPrimary" android:id="@+id/textName" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+            <TextView android:textColor="@color/textSecondary" android:id="@+id/textPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+            <TextView android:textColor="@color/textSecondary" android:id="@+id/textRules" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageDelete" android:layout_width="24dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/padding" app:srcCompat="@drawable/delete_stop"/>
+    </LinearLayout>
+    <View android:background="@color/backgroundTertiary" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

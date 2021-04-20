@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/llTitle" android:background="@color/brandBackgroundTertiary" android:layout_width="match_parent" android:layout_height="40dp" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textColor="@color/brandTextPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/label_choose_object" android:layout_marginStart="@dimen/base_16" style="@style/Text"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/rentObjectsLayout" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintTop_toBottomOf="@+id/llTitle">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rentObjectListView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/smallPadding" android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="?android:attr/progressBarStyleLarge"/>
+    <TextView android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/tvNoRentObjects" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/no_rent_objects" android:layout_centerInParent="true" android:fontFamily="@font/regular" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

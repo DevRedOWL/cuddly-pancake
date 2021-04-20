@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="40dp">
+    <EditText android:id="@+id/numoraddr" android:background="@drawable/resizable_textfield" android:layout_width="match_parent" android:layout_height="40dp" android:layout_toLeftOf="@+id/delete_field" android:inputType="textEmailAddress" android:textCursorDrawable="@null" android:layout_toStartOf="@+id/delete_field" style="@style/font6"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/delete_field" android:paddingLeft="5dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/delete_field_default" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@string/content_description_add"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/AppTheme" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilSearch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search_contacts" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" style="@style/EditProfile">
+            <com.google.android.material.textfield.TextInputEditText android:textSize="14sp" android:textColorLink="@android:color/white" android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="textPersonName" android:filterTouchesWhenObscured="false" android:textCursorDrawable="@drawable/cursor" android:fontFamily="@font/regular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/pbLoading" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.tabs.TabLayout android:id="@+id/tlChatPolls" android:background="@color/brandBackgroundPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/brandBackgroundPrimary" app:tabGravity="1" app:tabIndicatorColor="@color/brandTabsUnderline" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="5dp" app:tabMode="1" app:tabSelectedTextColor="@color/brandTabsTextSelected" app:tabTextAppearance="@style/TabText" app:tabTextColor="@color/brandTabsText"/>
+                <p035ru.unicorn.ujin.view.customViews.SwitchSwipeableViewPager android:id="@+id/vpChatPollList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

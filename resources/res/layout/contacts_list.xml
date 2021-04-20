@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_bar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:id="@+id/all_contacts" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/contacts_all" android:contentDescription="@string/content_description_all_contacts"/>
+            <View android:id="@+id/all_contacts_select" android:background="@color/colorA" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:gravity="center" android:id="@+id/linphone_contacts" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/contacts_sip" android:contentDescription="@string/content_description_linphone_contacts"/>
+            <View android:id="@+id/linphone_contacts_select" android:background="@color/colorA" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2"/>
+        <ImageView android:id="@+id/newContact" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/contact_add" android:layout_weight="0.2" android:contentDescription="@string/content_description_new_contact"/>
+        <ImageView android:id="@+id/edit" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/edit_list_button" android:layout_weight="0.2" android:contentDescription="@string/content_description_edit_list"/>
+    </LinearLayout>
+    <include layout="@layout/edit_list"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <EditText android:textColor="@android:color/black" android:gravity="center" android:id="@+id/searchField" android:background="@drawable/resizable_textfield" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:inputType="textPersonName" android:contentDescription="@string/content_description_search_contact" android:textCursorDrawable="@null"/>
+        <ImageView android:id="@+id/clearSearchField" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/clean_field_default" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/contactsList" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/colorE" android:dividerHeight="1dp" android:fastScrollEnabled="true" android:fastScrollAlwaysVisible="true"/>
+        <ProgressBar android:id="@+id/contactsFetchInProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle"/>
+        <TextView android:gravity="center" android:id="@+id/noSipContact" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_sip_contact" android:layout_centerVertical="true" style="@style/font6"/>
+        <TextView android:gravity="center" android:id="@+id/noContact" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_contact" android:layout_centerVertical="true" style="@style/font6"/>
+    </RelativeLayout>
+</LinearLayout>

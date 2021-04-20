@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/brandTextSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_8" android:layout_marginBottom="@dimen/base_8" android:text="@string/add_contact_search_title" android:layout_marginStart="@dimen/base_16" android:layout_marginEnd="@dimen/base_16" style="@style/Text"/>
+        <EditText android:textSize="16sp" android:textColor="@color/brandTextPrimary" android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_8" android:layout_marginBottom="@dimen/base_8" android:inputType="text" android:layout_marginStart="@dimen/base_16" android:layout_marginEnd="@dimen/base_16" style="@style/Text"/>
+        <TextView android:background="@color/titleTextColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_marginBottom="@dimen/base_8" android:layout_marginStart="@dimen/base_16" android:layout_marginEnd="@dimen/base_16"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvContactList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_8" android:layout_marginBottom="@dimen/base_8" android:layout_marginStart="@dimen/base_16"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="74dp" android:layout_height="74dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

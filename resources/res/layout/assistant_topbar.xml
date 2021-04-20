@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/topbar" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/back" android:background="@drawable/toolbar_button" android:padding="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/back" android:layout_weight="0.2" android:contentDescription="@string/content_description_back"/>
+    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/assistant" android:layout_weight="0.6" style="@style/font1"/>
+    <ImageView android:id="@+id/assistant_cancel" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/dialer_back" android:layout_weight="0.2" android:contentDescription="@string/content_description_dialer_back"/>
+</LinearLayout>

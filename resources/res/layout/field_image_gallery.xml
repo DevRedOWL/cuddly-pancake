@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p035ru.unicorn.ujin.view.customViews.WrapContentHeightViewPager android:id="@+id/vpImageGallery" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p051me.relex.circleindicator.CircleIndicator android:id="@+id/ciViewPager" android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" app:ci_animator="@animator/ci_animator" app:ci_drawable="@drawable/ci_selected" app:ci_drawable_unselected="@drawable/ci_unselected" app:ci_height="@dimen/smallPadding" app:ci_width="@dimen/smallPadding"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+package p046io.reactivex.rxkotlin;
+
+import kotlin.Metadata;
+import kotlin.Pair;
+import p046io.reactivex.functions.BiFunction;
+
+@Metadata(mo51341bv = {1, 0, 2}, mo51342d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u00032\u0006\u0010\u0004\u001a\u0002H\u00022\u0006\u0010\u0005\u001a\u0002H\u0003H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, mo51343d2 = {"<anonymous>", "Lkotlin/Pair;", "T", "U", "t", "u", "apply", "(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;"}, mo51344k = 3, mo51345mv = {1, 1, 8})
+/* renamed from: io.reactivex.rxkotlin.FlowablesKt$withLatestFrom$2 */
+/* compiled from: Flowables.kt */
+final class FlowablesKt$withLatestFrom$2<T1, T2, R> implements BiFunction<T, U, Pair<? extends T, ? extends U>> {
+    public static final FlowablesKt$withLatestFrom$2 INSTANCE = new FlowablesKt$withLatestFrom$2();
+
+    FlowablesKt$withLatestFrom$2() {
+    }
+
+    public final Pair<T, U> apply(T t, U u) {
+        return new Pair<>(t, u);
+    }
+}

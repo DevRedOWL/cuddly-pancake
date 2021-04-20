@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorH" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorF" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/back" android:background="@drawable/toolbar_button" android:padding="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/back" android:layout_weight="0.2" android:contentDescription="@string/content_description_back"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4"/>
+        <ImageView android:id="@+id/deleteContact" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/delete" android:layout_weight="0.2" android:contentDescription="@string/content_description_delete"/>
+        <ImageView android:id="@+id/editContact" android:background="@drawable/toolbar_button" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/edit" android:layout_weight="0.2" android:contentDescription="@string/content_description_edit"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@+id/avatar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/contact_picture" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/avatar" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:contentDescription="@string/content_description_contact_picture"/>
+                <ImageView android:id="@+id/mask" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/avatar_mask" android:adjustViewBounds="true" android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+            <TextView android:layout_gravity="center" android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/font5"/>
+            <TextView android:layout_gravity="center" android:id="@+id/contactOrganization" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/font9"/>
+            <TableLayout android:id="@+id/controls" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="*"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

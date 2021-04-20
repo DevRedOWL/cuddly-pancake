@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvObjectList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/textPrimary" android:gravity="center" android:id="@+id/tvNoObjects" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/no_company_objects" android:layout_centerInParent="true" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/padding"/>
+    <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="74dp" android:layout_height="74dp" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

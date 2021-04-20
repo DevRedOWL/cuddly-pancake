@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="22dp" android:width="22dp" android:viewportWidth="22" android:viewportHeight="22">
+    <path android:name="Stroke-1" android:pathData="M17.8,9.3 C17.8,13.994,13.994,17.8,9.3,17.8 C4.606,17.8,0.8,13.994,0.8,9.3 C0.8,4.606,4.606,0.8,9.3,0.8 C13.994,0.8,17.8,4.606,17.8,9.3 Z" android:strokeColor="#ec1d23" android:strokeWidth="1.4" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="1"/>
+    <path android:name="Stroke-3" android:pathData="M16.6105,13.9894 L20.7365,18.1154 C21.2625,18.6414,21.2145,19.5424,20.6285,20.1284 C20.0425,20.7144,19.1415,20.7624,18.6155,20.2374 L14.4895,16.1104" android:strokeColor="#ec1d23" android:strokeWidth="1.4" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="1"/>
+    <path android:name="Stroke-5" android:pathData="M9.3,4.3 C12.062,4.3,14.3,6.539,14.3,9.3" android:strokeColor="#ec1d23" android:strokeWidth="1.4" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="1"/>
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCouponGroups" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:layout_alignParentTop="true"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/couponListScrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/rvCouponGroups">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCouponList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallPadding" android:layout_marginBottom="@dimen/padding" android:layout_marginStart="@dimen/smallPadding" android:layout_marginEnd="@dimen/smallPadding" android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

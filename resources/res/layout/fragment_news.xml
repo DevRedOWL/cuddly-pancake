@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/AppTheme" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/ListView_news_ID" android:paddingBottom="@dimen/bottomNavigationHeightCard" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="5dp"/>
+    <TextView android:textSize="15sp" android:gravity="center" android:id="@+id/tvNoNewsMessage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" android:text="@string/noNewsYet" android:layout_centerInParent="true" style="@style/Text"/>
+</RelativeLayout>

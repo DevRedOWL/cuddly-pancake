@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/pb" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p035ru.unicorn.ujin.view.customViews.DynamicBackgroundButton android:id="@+id/btn_send_measures" android:visibility="invisible" android:layout_width="0dp" android:layout_height="@dimen/mainButtonHeight" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/rv" app:type="radial"/>
+            <TextView android:textColor="@color/brandTextPrimary" android:gravity="center" android:id="@+id/tvNotification" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/btn_send_measures"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:background="@color/brandBackgroundPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

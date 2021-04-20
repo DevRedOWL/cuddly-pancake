@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/toolbarColor" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivSearchBack" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="40dp" android:layout_height="match_parent" android:adjustViewBounds="true" android:paddingStart="@dimen/padding" android:layout_alignParentStart="true" app:srcCompat="@drawable/icon_back"/>
+    <androidx.appcompat.widget.SearchView android:id="@+id/searchView" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_toEndOf="@+id/ivSearchBack" app:closeIcon="@drawable/icon_close" app:iconifiedByDefault="false" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:queryHint="@string/title_search" app:searchIcon="@null" app:theme="@style/SearchViewTheme"/>
+</RelativeLayout>
